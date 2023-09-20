@@ -1,12 +1,14 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "node": true
   },
   "extends": [
     "eslint:recommended",
     "standard",
     "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/no-var-requires",
     "plugin:react/recommended"
   ],
   "parser": "@typescript-eslint/parser",
@@ -21,7 +23,7 @@
   "rules": {
     "indent": [
       "error",
-      4
+      2
     ],
     "linebreak-style": [
       "error",
